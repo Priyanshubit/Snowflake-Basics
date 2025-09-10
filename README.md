@@ -57,3 +57,11 @@ SHOW STAGES;
 
 ```
 💡 Stage = Connection between Snowflake & AWS S3 📂
+
+### 🔹 4. Create Snowpipe for Auto-Ingestion
+CREATE OR REPLACE PIPE PATIENTS_SNOWPIPE AUTO_INGEST=TRUE AS
+COPY INTO PATIENTS
+FROM @PATIENTS_AWS_STAGE
+FILE_FORMAT=MY_CSV_FORMAT;
+
+SHOW PIPES;
