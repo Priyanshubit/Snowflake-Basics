@@ -42,3 +42,18 @@ CREATE OR REPLACE FILE FORMAT my_csv_format
 
 SHOW FILE FORMATS IN SCHEMA PUBLIC;
 ```
+
+### 🔹 3. Create External Stage (AWS S3)
+```sql
+CREATE OR REPLACE STAGE PATIENTS_AWS_STAGE
+URL='S3://patients-data-snowpipe-pipeline'
+CREDENTIALS=(
+  AWS_KEY_ID='<your_aws_key>'
+  AWS_SECRET_KEY='<your_aws_secret>'
+)
+FILE_FORMAT=MY_CSV_FORMAT;
+
+SHOW STAGES;
+
+```
+💡 Stage = Connection between Snowflake & AWS S3 📂
