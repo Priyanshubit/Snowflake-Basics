@@ -2,3 +2,7 @@
 
 This project demonstrates how to build a real-time data ingestion pipeline using Snowflake, AWS S3, and Snowpipe. 
 The pipeline automatically ingests CSV files from an external S3 bucket into a Snowflake table for seamless analytics.
+
+
+📌 Problem Statement
+Data ingestion is often manual and time-consuming. To automate this process, we use Snowpipe to load patient registration data directly from AWS S3 into Snowflake in near real-time.
