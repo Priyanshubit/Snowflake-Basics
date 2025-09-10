@@ -30,7 +30,8 @@ CREATE OR REPLACE TABLE PATIENTS(
 SELECT * FROM PATIENTS;
 ```
 
-🔹 2. Define CSV File Format
+### 🔹 2. Define CSV File Format
+```sql
 USE SCHEMA PUBLIC;
 
 CREATE OR REPLACE FILE FORMAT my_csv_format
@@ -40,3 +41,4 @@ CREATE OR REPLACE FILE FORMAT my_csv_format
   NULL_IF = ('NULL', 'null');
 
 SHOW FILE FORMATS IN SCHEMA PUBLIC;
+```
