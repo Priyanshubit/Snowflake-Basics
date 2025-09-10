@@ -1,1 +1,4 @@
+🧊 Snowflake Data Pipeline with Snowpipe
 
+This project demonstrates how to build a real-time data ingestion pipeline using Snowflake, AWS S3, and Snowpipe. 
+The pipeline automatically ingests CSV files from an external S3 bucket into a Snowflake table for seamless analytics.
